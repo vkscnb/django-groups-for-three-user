@@ -5,7 +5,7 @@ from rest_framework.response import Response
 
 from django.contrib.auth.hashers import make_password
 from django.contrib.auth.models import Group
-from .serializers import UserListAndDetailsSerializer
+from .serializers import UserListAndDetailsSerializer, UserLoginSerializer
 from .models import User
 from .user_permission_decorator import permission_decorator
 from rest_framework.decorators import api_view, permission_classes
@@ -140,7 +140,7 @@ def details_of_student(request, student_id):
     
     ### except exceptions if Student not exist in database
     except User.DoesNotExist as e:
-        return Response({'success':True, "message":f"Student not exist with id {teacher_id}"})
+        return Response({'success':True, "message":f"Student not exist with id {student_id}"})
 
     except Exception as e:
         return Response({'success':True, "message":str(e)})
