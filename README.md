@@ -57,7 +57,7 @@ This is a Guide for setup for this application.
 
             $ ALTER ROLE test1 SET timezone TO 'UTC';
 
-            $ GRANT ALL PRIVILEGES ON DATABASE product_db TO test1;
+            $ GRANT ALL PRIVILEGES ON DATABASE user_db TO test1;
 
         </pre>
         
