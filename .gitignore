@@ -1,0 +1,7 @@
+db.sqlite3
+
+user/migrations/00*
+user/migrations/__pycache__
+user/__pycache__
+backend/__pycache__
+user/management/commands/__pycache__
